@@ -24,7 +24,7 @@ namespace Makale_Web.Controllers
             //  test1.UpdateTest();
             // test1.DeleteTest();
             //  test1.YorumEkle();
-     
+     //git güncellemesi
             //return View(ny.Listele().OrderByDescending(x => x.DegistirmeTarihi).ToList());
             return View(ny.ListeleQueryable().Where(x=>x.Taslak==false).OrderByDescending(x=>x.DegistirmeTarihi).ToList());
         }
